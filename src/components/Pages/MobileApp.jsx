@@ -1,7 +1,7 @@
 import appstore from "../../assets/appstore.png";
 import playstore from "../../assets/playstore.png";
-import pattern1 from "../../assets/pattern 3.png";
-import pattern2 from "../../assets/pattern 2.png";
+import pattern1 from "../../assets/Pattern 3.png";
+import pattern2 from "../../assets/Pattern 2.png";
 const MobileApp = () => {
   return (
     <>
