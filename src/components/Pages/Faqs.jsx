@@ -61,7 +61,7 @@ const Faqs = () => {
           {" "}
           Frequently Asked Questions{" "}
         </h1>
-        <div className="flex flex-col justify-center max-w-6xl mx-auto">
+        <div className="flex flex-col justify-center mb-10 mx-5 md:max-w-6xl md:mx-auto">
           {renderQuestions}
         </div>
       </motion.div>

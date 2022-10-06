@@ -31,18 +31,18 @@ const Footer = () => {
             </div>
           </div>
           <div className="max-w-xs">
-            <h2 className="pb-4 font-medium text-md md:text-2xl">
+            <h2 className="pb-4 text-orange-400 md:text-white font-medium text-md md:text-2xl">
               For Clients{" "}
             </h2>
-            <ul className="text-sm md:text-base">
-              <li className="py-1 text-sm md:text-base">Find FreeLancers</li>
-              <li className="py-1">Post Project</li>
+            <ul className="text-sm  md:text-base">
+              <li className="py-1  text-sm md:text-base">Find FreeLancers</li>
+              <li className="py-1 font-thin">Post Project</li>
               <li className="py-1">Refund Policy</li>
               <li className="py-1">Privacy Policy</li>
             </ul>
           </div>
           <div className="max-w-xs">
-            <h2 className="pb-4 font-medium text-md md:text-2xl">
+            <h2 className="pb-4 text-orange-400 md:text-white font-medium text-md md:text-2xl">
               For FreeLancers
             </h2>
             <ul className="text-sm md:text-base">
@@ -51,7 +51,10 @@ const Footer = () => {
             </ul>
           </div>
           <div className="max-w-xs">
-            <h2 className="pb-4  font-medium text-md md:text-2xl"> Call Us </h2>
+            <h2 className="pb-4 text-orange-400 md:text-white  font-medium text-md md:text-2xl">
+              {" "}
+              Call Us{" "}
+            </h2>
             <ul className="text-sm md:text-base">
               <li className="py-1 flex ">
                 {" "}
