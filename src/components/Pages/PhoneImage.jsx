@@ -1,5 +1,5 @@
-import iphone1 from "../../assets/iphone1.png";
-import iphone2 from "../../assets/iphone2.png";
+import iphone1 from "../../assets/iPhone1.png";
+import iphone2 from "../../assets/iPhone2.png";
 const PhoneImage = () => {
   return (
     <>
