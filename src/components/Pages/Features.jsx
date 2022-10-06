@@ -9,16 +9,16 @@ const Features = () => {
     return (
       <motion.div
         key={index}
-        // initial={{
-        //   opacity: 0,
-        //   transform: `${
-        //     index % 2 === 0 ? "translateX(-20rem)" : "translateX(20rem)"
-        //   } `,
-        // }}
-        // whileInView={{
-        //   opacity: 1,
-        //   transform: " translateX(0rem)",
-        // }}
+        initial={{
+          opacity: 0,
+          transform: `${
+            index % 2 === 0 ? "translateX(-20rem)" : "translateX(20rem)"
+          } `,
+        }}
+        whileInView={{
+          opacity: 1,
+          transform: " translateX(0rem)",
+        }}
         viewport={{ once: false }}
         transition={{ duration: 0.3 }}
         className="flex md:shadow-none shadow-md md:p-0 md:m-0 p-5 m-3 items-center flex-col"

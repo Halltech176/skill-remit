@@ -22,13 +22,43 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import Logo from "./Logo";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+// import { useLocaation } from "react-router";
 const Header = () => {
   const [side, setSide] = useState("left");
+  const location = useLocation();
+  const path = location.pathname;
+  console.log(path);
 
   const [open, setOpen] = useState(false);
   const theme = useTheme();
+  const routes = [
+    {
+      name: "Home",
+      route: "/",
+    },
+    {
+      name: "About",
+      route: "/about",
+    },
+    {
+      name: "FAQ'S",
+      route: "/faqs",
+    },
+  ];
   const links_1 = ["/", "/about"];
+  const renderLinks = routes.map((data, index) => {
+    console.log(data.route);
+    return (
+      <li
+        className={` ${
+          data.route === path ? "active_route" : ""
+        } my-5 mx-6 font-dm  font-medium`}
+      >
+        <Link to={data.route}>{data.name}</Link>
+      </li>
+    );
+  });
   // const links_2 = ['/',/]
 
   const handleDrawerOpen = () => {
@@ -127,15 +157,7 @@ const Header = () => {
         <Logo />
         <nav className="hidden md:block">
           <ul className="flex justify-between items-center">
-            <li className="my-5 mx-6 font-dm font-medium">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="my-5 mx-6 font-dm font-medium">
-              <Link to="/about">About Us</Link>
-            </li>
-            <li className="my-5 mx-6 font-dm font-medium">
-              <Link to="/faqs">FAQ'S</Link>
-            </li>
+            {renderLinks}
 
             <button className="bg-white m-3 px-3 py-2 rounded-md text-normal text-md font-bold">
               Download App

@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-normal">
-        <div className="  flex  pt-10 md:pt-24 md:flex-nowrap flex-wrap md:px-24 px-5  text-white  justify-between">
+        <div className="  flex  pt-10 md:pt-24 md:flex-nowrap flex-wrap md:px-20 px-5  text-white  justify-between">
           <div className="max-w-xs md:py-6">
             <div className="py-3">
               <Logo />

@@ -122,9 +122,38 @@ input::focus {
   background: linear-gradient(278.21deg, #130160 1.66%, #3915d1 96.78%);
   color: white;
 }
+.app-btn {
+  background: white;
+  color: #001b87;
+  padding: 0.8em 1rem;
+  border-radius: 10px;
+}
+.phone_image {
+  background: url("./assets//Shape.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.active_route {
+  color: #001b87;
+  background: white;
+  padding: 0.4rem 1.3rem;
+  border-radius: 0.5rem;
+}
 @media (max-width: 640px) {
   .home-container {
     background: white;
     color: #001b87;
   }
+
+  .app-btn {
+    background: linear-gradient(278.21deg, #130160 1.66%, #3915d1 96.78%);
+    color: #ffffff;
+    padding: 0.8em 1rem;
+    border-radius: 10px;
+  }
+  /* .phone_image {
+    background: url("./assets//purple_bg.png");
+    background-repeat: no-repeat;
+    background-size: COVER;
+  } */
 }

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import Header from "../Common/Header";
 import { useState } from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -48,15 +50,21 @@ const Faqs = () => {
   });
   return (
     <>
-      <div className="my-24">
-        <h1 className="text-center  text-primary text-2xl md:text-5xl font-semibold my-3">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.7 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className=""
+      >
+        <Header />
+        <h1 className="text-center md:mt-10 mt-24 md:my-10 text-primary text-2xl md:text-5xl font-semibold my-3">
           {" "}
           Frequently Asked Questions{" "}
         </h1>
         <div className="flex flex-col justify-center max-w-6xl mx-auto">
           {renderQuestions}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
