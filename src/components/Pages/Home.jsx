@@ -12,18 +12,18 @@ const Home = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
       >
         <Header />
-        <div className=" home-container z-20 relative py-20 px-10 md:flex-nowrap flex-wrap justify-center flex items-center md:justify-evenly  md-px-16 ">
+        <div className=" home-container z-20 relative  py-20 px-5 md:flex-nowrap flex-wrap justify-center flex items-center md:justify-evenly  md-px-16 ">
           <motion.div
-            className="z-20 "
+            className="z-20 py-10 "
             initial={{ opacity: 0, transform: "translateX(-20rem)" }}
             whileInView={{ opacity: 1, transform: "translateX(0rem)" }}
             viewport={{ once: false }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
           >
-            <h1 className="text-2xl  max-w-xl md:text-5xl relative font-dm font-black md:font-medium">
+            <h1 className="text-3xl leading-10   max-w-xl md:text-5xl relative font-dm font-black md:font-medium">
               We Help in getting{" "}
               <span className="text-secondary">Hired and Hire</span> people for
               business Faster
@@ -44,7 +44,7 @@ const Home = () => {
             initial={{ opacity: 0, transform: "translateX(20rem)" }}
             whileInView={{ opacity: 1, transform: "translateX(0rem)" }}
             viewport={{ once: false }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7 }}
             className="block   md:relative md:flex md:mr-10"
           >
             <PhoneImage />
