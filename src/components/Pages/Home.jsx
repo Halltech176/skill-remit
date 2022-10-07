@@ -14,41 +14,43 @@ const Home = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
       >
-        <Header />
-        <div className=" home-container z-20 relative  py-20 px-5 md:flex-nowrap flex-wrap justify-center flex items-center md:justify-evenly  md-px-16 ">
-          <motion.div
-            className="z-20 py-10 "
-            initial={{ opacity: 0, transform: "translateX(-20rem)" }}
-            whileInView={{ opacity: 1, transform: "translateX(0rem)" }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.7 }}
-          >
-            <h1 className="text-3xl leading-10   max-w-xl md:text-5xl relative font-dm font-black md:font-medium">
-              We Help in getting{" "}
-              <span className="text-secondary">Hired and Hire</span> people for
-              business Faster
-              <span>
-                <img
-                  className="md:w-64 w-40 -mt-3 md:-mt-2 mx-5"
-                  src={curve_line}
-                  alt="curve_line"
-                />
-              </span>
-            </h1>
-            <button className=" app-btn  my-10 px-5 py-2 rounded-md text-normal text-md font-bold">
-              Download App
-            </button>
-          </motion.div>
+        <div className="bg-primary">
+          <Header />
+          <div className=" home-container z-20 relative  py-20 px-5 md:flex-nowrap flex-wrap justify-center flex items-center md:justify-evenly  md-px-16 ">
+            <motion.div
+              className="z-20 py-10 "
+              initial={{ opacity: 0, transform: "translateX(-20rem)" }}
+              whileInView={{ opacity: 1, transform: "translateX(0rem)" }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.7 }}
+            >
+              <h1 className="text-3xl leading-10   max-w-xl md:text-5xl relative font-dm font-black md:font-medium">
+                We Help in getting{" "}
+                <span className="text-secondary">Hired and Hire</span> people
+                for business Faster
+                <span>
+                  <img
+                    className="md:w-64 w-40 -mt-3 md:-mt-2 mx-5"
+                    src={curve_line}
+                    alt="curve_line"
+                  />
+                </span>
+              </h1>
+              <button className=" app-btn  my-10 px-5 py-2 rounded-md text-normal text-md font-bold">
+                Download App
+              </button>
+            </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, transform: "translateX(20rem)" }}
-            whileInView={{ opacity: 1, transform: "translateX(0rem)" }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.7 }}
-            className="block   md:relative md:flex md:mr-10"
-          >
-            <PhoneImage />
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, transform: "translateX(20rem)" }}
+              whileInView={{ opacity: 1, transform: "translateX(0rem)" }}
+              viewport={{ once: false }}
+              transition={{ duration: 0.7 }}
+              className="block   md:relative md:flex md:mr-10"
+            >
+              <PhoneImage />
+            </motion.div>
+          </div>
         </div>
         <Features />
         <div className="block md:flex flex-wrap mx-2 md:mx-16 my-10 items-center justify-evenly">

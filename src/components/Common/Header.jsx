@@ -73,7 +73,7 @@ const Header = () => {
     <>
       <Box className="flex md:hidden">
         <CssBaseline />
-        <AppBar position="fixed" open={open}>
+        <AppBar position="fixed" elevation={0} open={open}>
           <Toolbar className="bg-primary">
             <Box noWrap sx={{ flexGrow: 1 }} component="div">
               <Logo />
